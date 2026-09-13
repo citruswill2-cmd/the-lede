@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>THE LEDE — first sentence, then the rack</title>
+  <meta name="description" content="THE LEDE writes the first website people starting a business can own, then prints other live sites on one cream rack so they are not quiet." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;500&family=Sora:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js" defer></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paper: "#F2EADF",
+            sheet: "#FFF8EE",
+            ink: "#161310",
+            mute: "#6E675C",
+            rule: "#D4C6B0",
+            live: "#4D8BFF",
+            heat: "#FF2B3A"
+          },
+          fontFamily: {
+            display: ["Bebas Neue", "Impact", "sans-serif"],
+            sans: ["Sora", "ui-sans-serif", "system-ui", "sans-serif"],
+            mono: ["IBM Plex Mono", "ui-monospace", "monospace"]
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      background-color: #F2EADF;
+      background-image:
+        repeating-linear-gradient(0deg, transparent, transparent 27px, rgba(22,19,16,.045) 28px),
+        linear-gradient(180deg, #FFF8EE 0, #F2EADF 220px);
+      color: #161310;
+    }
+    .reveal { opacity: 0; transform: translateY(10px); }
+    .tick {
+      font-family: "IBM Plex Mono", ui-monospace, monospace;
+      font-size: 10px;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+    }
+    .sheet {
+      background: #FFF8EE;
+      border: 1px solid #D4C6B0;
+      box-shadow: 0 18px 40px rgba(22,19,16,.06);
+    }
+  </style>
+</head>
+<body class="font-sans antialiased">
+  <a class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:bg-ink focus:text-sheet focus:px-3 focus:py-2" href="#board">Skip to the rack</a>
+
+  <header class="sticky top-0 z-40 border-b border-rule bg-paper/90 backdrop-blur">
+    <div class="mx-auto flex max-w-5xl items-center justify-between gap-4 px-4 py-3">
+      <a href="#top" class="font-display text-3xl tracking-wide text-ink">THE LEDE</a>
+      <nav class="flex gap-5 tick text-mute">
+        <a class="hover:text-ink" href="#job">Job</a>
+        <a class="hover:text-ink" href="#board">Rack</a>
+        <a class="text-heat hover:text-ink" href="#brief">File a brief</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top" class="mx-auto max-w-5xl px-4 pb-24">
+    <section class="reveal sheet mt-7 px-5 py-10 md:px-10 md:py-14">
+      <div class="flex flex-wrap items-baseline justify-between gap-2 tick text-mute">
+        <span class="text-heat">Cream rack · Chris</span>
+        <span>Young adults + adults</span>
+        <span>citruswill2@gmail.com</span>
+      </div>
+      <h1 class="mt-5 font-display text-[12vw] leading-[0.78] tracking-tight text-ink sm:text-7xl md:text-8xl lg:text-9xl">
+        THE SHOP OPENED.<br /><span class="text-heat">THE LEDE DIDN’T.</span>
+      </h1>
+      <p class="mt-6 max-w-2xl text-base leading-relaxed text-ink/70 md:text-lg">
+        You decided. You do not have a site, or you have one and the room is empty.
+        THE LEDE writes the first HTML file you own — then prints other live URLs on the same cream sheet.
+      </p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="#brief" class="bg-heat px-5 py-3 font-display text-xl tracking-wide text-sheet hover:bg-live">FILE A BRIEF</a>
+        <a href="#board" class="border border-ink/20 px-5 py-3 font-display text-xl tracking-wide text-ink hover:border-live hover:text-live">READ THE RACK</a>
+      </div>
+    </section>
+
+    <section id="job" class="reveal mt-6 grid border border-rule md:grid-cols-3">
+      <article class="border-b border-rule bg-sheet p-6 md:border-b-0 md:border-r md:border-rule">
+        <p class="tick text-heat">01 · paragraph</p>
+        <h2 class="mt-2 font-display text-4xl leading-none">SAY IT ONCE</h2>
+        <p class="mt-3 text-sm leading-relaxed text-mute">Name. What it does. Who it is for. Budget if you have one. Live URL if you already have one.</p>
+      </article>
+      <article class="border-b border-rule bg-sheet p-6 md:border-b-0 md:border-r md:border-rule">
+        <p class="tick text-live">02 · file</p>
+        <h2 class="mt-2 font-display text-4xl leading-none">OWN THE HTML</h2>
+        <p class="mt-3 text-sm leading-relaxed text-mute">Tailwind, light anime.js, about half a second. No CMS. Drop it on Vercel. Keep the file.</p>
+      </article>
+      <article class="bg-sheet p-6">
+        <p class="tick text-mute">03 · rack</p>
+        <h2 class="mt-2 font-display text-4xl leading-none">PRINT THE LIVE ONES</h2>
+        <p class="mt-3 text-sm leading-relaxed text-mute">Blue is a public URL. Red is studio heat. Gray waits in the tray until the address works.</p>
+      </article>
+    </section>
+
+    <section class="reveal mt-6 grid border border-rule md:grid-cols-2">
+      <article class="border-b border-rule bg-sheet p-6 md:border-b-0 md:border-r md:border-rule md:p-8">
+        <p class="tick text-heat">Lane A · first file</p>
+        <h2 class="mt-2 font-display text-5xl leading-none">START THE SHOP</h2>
+        <p class="mt-4 text-base leading-relaxed text-ink/70">
+          For people who just decided and do not know the stack. Not a course. Not a builder login.
+          A phone-first page with your name on it, readable in one thumb.
+        </p>
+        <ul class="mt-5 space-y-1 font-mono text-[12px] text-mute">
+          <li>— Tailwind + light anime.js + ~0.5s</li>
+          <li>— No CMS, no ads, no payments</li>
+          <li>— You keep the HTML</li>
+        </ul>
+      </article>
+      <article class="bg-sheet p-6 md:p-8">
+        <p class="tick text-live">Lane B · the rack</p>
+        <h2 class="mt-2 font-display text-5xl leading-none">SITES ALREADY UP</h2>
+        <p class="mt-4 text-base leading-relaxed text-ink/70">
+          Live work that still needs a room. One cream sheet. Blue stamps for public URLs.
+          Gray for copy still sitting in a repo.
+        </p>
+        <p class="mt-5 font-mono text-[12px] text-mute">Pop with teeth. Windows down. Lights off.</p>
+      </article>
+    </section>
+
+    <section id="board" class="reveal mt-6">
+      <div class="mb-3 flex flex-wrap items-end justify-between gap-2">
+        <div>
+          <p class="tick text-heat">Edition · live pins</p>
+          <h2 class="font-display text-5xl leading-none">THE RACK</h2>
+        </div>
+        <p class="max-w-sm text-sm text-mute">Blue is live. Gray is still in the tray. Utah slot keeps the short cadence.</p>
+      </div>
+      <ul class="divide-y divide-rule border border-rule bg-sheet">
+        <li>
+          <a class="flex flex-wrap items-baseline justify-between gap-2 px-4 py-4 hover:bg-paper" href="https://iris0nyx.com" target="_blank" rel="noopener">
+            <span class="font-display text-3xl leading-none">IRIS ONYX</span>
+            <span class="tick text-live">iris0nyx.com · live</span>
+            <span class="w-full text-sm text-mute">Utah. Goth pop. Lights off.</span>
+          </a>
+        </li>
+        <li>
+          <a class="flex flex-wrap items-baseline justify-between gap-2 px-4 py-4 hover:bg-paper" href="https://dnc-computerz.vercel.app" target="_blank" rel="noopener">
+            <span class="font-display text-3xl leading-none">DNC COMPUTERZ</span>
+            <span class="tick text-live">dnc-computerz.vercel.app · live</span>
+            <span class="w-full text-sm text-mute">Towers. Laptops. Parts. Screens.</span>
+          </a>
+        </li>
+        <li>
+          <a class="flex flex-wrap items-baseline justify-between gap-2 px-4 py-4 hover:bg-paper" href="https://sameweekhq.vercel.app" target="_blank" rel="noopener">
+            <span class="font-display text-3xl leading-none">REDLINE</span>
+            <span class="tick text-live">sameweekhq.vercel.app · live</span>
+            <span class="w-full text-sm text-mute">Websites however you want them. Done in no time.</span>
+          </a>
+        </li>
+        <li>
+          <a class="flex flex-wrap items-baseline justify-between gap-2 px-4 py-4 hover:bg-paper" href="https://daytape.vercel.app" target="_blank" rel="noopener">
+            <span class="font-display text-3xl leading-none">DAYTAPE</span>
+            <span class="tick text-live">daytape.vercel.app · live</span>
+            <span class="w-full text-sm text-mute">A sunny afternoon, kept short.</span>
+          </a>
+        </li>
+        <li class="flex flex-wrap items-baseline justify-between gap-2 px-4 py-4">
+          <span class="font-display text-3xl leading-none text-mute">SAMEWEEK</span>
+          <span class="tick text-mute">GitHub · sameweek.vercel.app still serves CAST</span>
+          <span class="w-full text-sm text-mute">Stays in the tray until it has its own live project.</span>
+        </li>
+        <li class="flex flex-wrap items-baseline justify-between gap-2 px-4 py-4">
+          <span class="font-display text-3xl leading-none text-mute">LAUGHLINE</span>
+          <span class="tick text-mute">GitHub · laughline.vercel.app is 404</span>
+          <span class="w-full text-sm text-mute">Comedy first-draft. Pin flips blue when the Vercel URL is public.</span>
+        </li>
+        <li class="flex flex-wrap items-baseline justify-between gap-2 px-4 py-4">
+          <span class="font-display text-3xl leading-none text-heat">OPEN LINE</span>
+          <span class="tick text-heat">your URL</span>
+          <span class="w-full text-sm text-mute">Name + one sentence + live address. We print it here.</span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="brief" class="reveal sheet mt-6 px-5 py-10 md:px-10 md:py-12">
+      <p class="tick text-heat">Copy desk · one field · on the home page</p>
+      <h2 class="mt-3 font-display text-6xl leading-none text-ink md:text-7xl">SAY THE THING.</h2>
+      <p class="mt-4 max-w-xl text-base leading-relaxed text-ink/70">
+        No discovery call. Name, what you want the site to do, who it is for, budget if you have one, live URL if you already have one.
+      </p>
+      <form id="brief-form" class="mt-8 max-w-xl">
+        <label class="tick text-mute" for="para">The paragraph</label>
+        <textarea id="para" name="para" rows="8" required placeholder="Name. What it does. Who it’s for. Budget if you have one. Live URL if you want the rack." class="mt-2 w-full resize-y border border-rule bg-paper px-4 py-3 text-ink outline-none focus:border-live"></textarea>
+        <button type="submit" class="mt-4 bg-ink px-6 py-3 font-display text-xl tracking-wide text-sheet hover:bg-heat">SEND TO CHRIS</button>
+        <p class="mt-3 font-mono text-[11px] text-mute">Opens mail to citruswill2@gmail.com with the paragraph prefilled. No hosted form on this budget.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="border-t border-rule">
+    <div class="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-3 px-4 py-6 tick text-mute">
+      <span>THE LEDE · Chris</span>
+      <a class="hover:text-ink" href="mailto:citruswill2@gmail.com">citruswill2@gmail.com</a>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var nodes = document.querySelectorAll(".reveal");
+      if (window.anime) {
+        window.anime({
+          targets: nodes,
+          opacity: [0, 1],
+          translateY: [10, 0],
+          delay: window.anime.stagger(70),
+          duration: 420,
+          easing: "easeOutQuad"
+        });
+      } else {
+        for (var i = 0; i < nodes.length; i++) nodes[i].style.opacity = "1";
+      }
+
+      var form = document.getElementById("brief-form");
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        var text = (document.getElementById("para").value || "").trim();
+        var body = text || "Name.\nWhat I want the site to do.\nWho it is for.\nBudget if I have one.\nLive URL if I have one.";
+        window.location.href =
+          "mailto:citruswill2@gmail.com" +
+          "?subject=" + encodeURIComponent("THE LEDE brief") +
+          "&body=" + encodeURIComponent(body);
+      });
+    })();
+  </script>
+</body>
+</html>
